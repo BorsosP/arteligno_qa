@@ -1,1 +1,1 @@
-web: gunicorn artelignoqa:server
+web: gunicorn arteligno_api
