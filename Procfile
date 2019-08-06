@@ -1,1 +1,1 @@
-web: gunicorn arteligno_prod_01:server
+web: gunicorn artelignoqa:server
