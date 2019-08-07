@@ -13,7 +13,7 @@ import spacy
 import random
 from sklearn.externals import joblib
 from sklearn_crfsuite import CRF
-import en_core_web_sm
+import en_core_web_md
 
 
 
@@ -282,7 +282,7 @@ if __name__ == '__main__':
     
     
     crf = joblib.load('answer_tagger_cnn_based_02')
-    nlp = en_core_web_sm.load()
+    nlp = en_core_web_md.load()
     
     app.run(debug=True)
 
