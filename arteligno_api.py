@@ -13,11 +13,11 @@ import spacy
 import random
 from sklearn.externals import joblib
 from sklearn_crfsuite import CRF
-import en_core_web_md
+import en_core_web_sm
 
 
 crf = joblib.load('answer_tagger_cnn_based_02')
-nlp = en_core_web_md.load()
+nlp = en_core_web_sm.load()
 
 
 def pos_tagger(sentence):
