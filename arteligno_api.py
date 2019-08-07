@@ -15,6 +15,9 @@ from sklearn.externals import joblib
 from sklearn_crfsuite import CRF
 
 
+crf = joblib.load('answer_tagger_cnn_based_02')
+nlp = spacy.load('en_core_web_sm')
+
 
 def pos_tagger(sentence):
     doc = nlp(sentence)
@@ -278,9 +281,6 @@ def predict():
 
 if __name__ == '__main__':
     
-
-    crf = joblib.load('answer_tagger_cnn_based_02')
-    nlp = spacy.load('en_core_web_sm')
     
     app.run(debug=True)
 
