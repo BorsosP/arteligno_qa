@@ -16,6 +16,8 @@ from sklearn_crfsuite import CRF
 import en_core_web_md
 
 
+crf = joblib.load('answer_tagger_cnn_based_02')
+nlp = en_core_web_md.load()
 
 
 def pos_tagger(sentence):
@@ -281,8 +283,7 @@ def predict():
 if __name__ == '__main__':
     
     
-    crf = joblib.load('answer_tagger_cnn_based_02')
-    nlp = en_core_web_md.load()
+    
     
     app.run(debug=True)
 
